@@ -1,11 +1,8 @@
 /* -------------------------------------------
 
-Name: 		Arter
+Name: 		Daniel
 Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+Author:		Djacon
 
 ------------------------------------------- */
 $(function() {
@@ -101,7 +98,7 @@ $(function() {
     }
   });
 
-  // progressbars
+  // Russian Language
   var bar = new ProgressBar.Circle(circleprog1, {
     strokeWidth: 7,
     easing: 'easeInOut',
@@ -120,6 +117,7 @@ $(function() {
 
   bar.animate(1);
 
+  // English Language
   var bar = new ProgressBar.Circle(circleprog2, {
     strokeWidth: 7,
     easing: 'easeInOut',
@@ -138,6 +136,7 @@ $(function() {
 
   bar.animate(.8);
 
+  // Turkish Language
   var bar = new ProgressBar.Circle(circleprog3, {
     strokeWidth: 7,
     easing: 'easeInOut',
@@ -156,6 +155,7 @@ $(function() {
 
   bar.animate(.9);
 
+  // Stack: Python
   var bar = new ProgressBar.Line(lineprog1, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
@@ -173,6 +173,7 @@ $(function() {
 
   bar.animate(1);
 
+  // Stack: Numpy / Pandas
   var bar = new ProgressBar.Line(lineprog2, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
@@ -190,6 +191,7 @@ $(function() {
 
   bar.animate(1);
 
+  // Stack: Pytorch
   var bar = new ProgressBar.Line(lineprog3, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
@@ -207,6 +209,7 @@ $(function() {
 
   bar.animate(.8);
 
+  // Stack: Computer Vision
   var bar = new ProgressBar.Line(lineprog4, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
@@ -222,8 +225,9 @@ $(function() {
     }
   });
 
-  bar.animate(.8);
+  bar.animate(.6);
 
+  // Stack: NLP
   var bar = new ProgressBar.Line(lineprog5, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
@@ -239,7 +243,7 @@ $(function() {
     }
   });
 
-  bar.animate(.6);
+  bar.animate(.8);
 
   // Contact form
   $('.art-input').keyup(function() {
