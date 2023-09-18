@@ -1,2 +1,1 @@
-# djacon.github.io
-Personal Website Page (beta)
+# Personal Website Page (beta)
