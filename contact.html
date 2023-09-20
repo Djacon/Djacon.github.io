@@ -37,10 +37,7 @@
             </div>
             <div class="art-header">
               <div class="art-avatar">
-                <a data-fancybox="avatar" data-no-swup href="img/face-1.jpg" class="art-avatar-curtain">
-                  <img src="img/face-1.jpg" alt="avatar">
-                  <i class="fas fa-expand"></i>
-                </a>
+                <img src="img/face-1.jpg" class="art-avatar-curtain" alt="avatar">
                 <div class="art-lamp-light">
                   <!-- add class 'art-not-available' if not available-->
                   <div class="art-available-lamp"></div>
@@ -184,7 +181,7 @@
                         <ul>
                           <li><h6>Country:</h6><span>Russia</span></li>
                           <li><h6>City:</h6><span>Moscow</span></li>
-                          <li><h6>Street:</h6><span>Somewhere</span></li>
+                          <li><h6>Phone:</h6><span>+7 (965) 114 99 56</span></li>
                         </ul>
                       </div>
                     </div>
@@ -194,9 +191,9 @@
                     <div class="art-a art-card">
                       <div class="art-table p-15-15">
                         <ul>
-                          <li><h6>Email:</h6><span>djaconfr@gmail.com</span></li>
-                          <li><h6>Telegram:</h6><span>@Djacon</span></li>
-                          <li><h6>Discord:</h6><span>Djacon#0090</span></li>
+                          <li><h6>Email:</h6><a href="mailto:djaconfr@gmail.com" data-no-swup><span>djaconfr@gmail.com</span></a></li>
+                          <li><h6>Github:</h6><a href="https://github.com/Djacon" target="_blank" data-no-swup><span>github.com/Djacon</span></a></li>
+                          <li><h6>Telegram:</h6><a href="https://t.me/Djacon" target="_blank" data-no-swup><span>t.me/Djacon</span></a></li>
                         </ul>
                       </div>
                     </div>
@@ -206,9 +203,9 @@
                     <div class="art-a art-card">
                       <div class="art-table p-15-15">
                         <ul>
-                          <li><h6>Support service:</h6><span>+78 (098) 333 11 22</span></li>
-                          <li><h6>Office:</h6><span>+78 (098) 326 11 22</span></li>
-                          <li><h6>Personal:</h6><span>+78 (077) 114 26 53</span></li>
+                          <li><h6>Discord:</h6><a href="https://discordapp.com/users/417714567632781313/" target="_blank" data-no-swup><span>Djacon#0090</span></a></li>
+                          <li><h6>Kaggle:</h6><a href="https://kaggle.com/djacon" target="_blank" data-no-swup><span>kaggle.com/Djacon</span></a></li>
+                          <li><h6>Linkedin:</h6><a href="https://www.linkedin.com" target="_blank" data-no-swup><span>linkedin.com/Djacon</span></a></li>
                         </ul>
                       </div>
                     </div>
@@ -271,7 +268,7 @@
                 <ul class="main-menu">
                   <li class="menu-item"><a href="index.html">Home</a></li>
                   <li class="menu-item menu-item-has-children">
-                    <a href="#." data-no-swup>Portfolio</a>
+                    <a data-no-swup>Portfolio</a>
                     <ul class="sub-menu">
                       <li class="menu-item"><a href="portfolio.html">Project 1</a></li>
                       <li class="menu-item"><a href="portfolio.html">Project 2</a></li>
@@ -330,6 +327,20 @@
 
   <!-- main js -->
   <script src="js/main.js"></script>
+
+  <script>
+    function parse_url(url) {
+      let idx = url.indexOf('order=');
+      if (idx == -1 || url.length <= idx + 6) {
+        return '';
+      }
+      return url.slice(idx + 6);
+    }
+    let text = parse_url(window.location.search);
+    if (text) {
+      console.log(`PARAMS: ${text}`);
+    }
+  </script>
 
 </body>
 

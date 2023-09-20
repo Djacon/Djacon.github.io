@@ -1023,7 +1023,7 @@ info bar
           /* line 119, ../scss/_info-bar.scss */
           .art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp:after {
             position: relative;
-            content: 'I am available for freelance hire';
+            content: 'I am available for job hire';
             width: 115px;
             display: block;
             padding: 5px 10px;
