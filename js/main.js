@@ -257,7 +257,7 @@ $(function() {
   $("#form").submit(function() {
     $.ajax({
       type: "POST",
-      url: "mail.php",
+      url: "https://formspree.io/f/xgejpwwd",
       data: $(this).serialize()
     }).done(function() {
 
@@ -486,7 +486,7 @@ $(function() {
     $("#form").submit(function() {
       $.ajax({
         type: "POST",
-        url: "mail.php",
+        url: "https://formspree.io/f/xgejpwwd",
         data: $(this).serialize()
       }).done(function() {
 
