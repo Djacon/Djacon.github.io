@@ -254,12 +254,18 @@ $(function() {
     }
   });
 
-  $("#form").submit(function() {
+  $("#form").submit(function(e) {
+    e.preventDefault();
+
+    $("#submit-btn").prop("disabled", true);
+
     $.ajax({
       type: "POST",
-      url: "https://formspree.io/f/xgejpwwd",
+      url: "https://usebasin.com/f/bccb533a51cd",
       data: $(this).serialize()
     }).done(function() {
+      $('#form')[0].reset();
+      $('.art-input').removeClass('art-active');
 
       var tl = anime.timeline({
         easing: 'easeOutExpo',
@@ -483,17 +489,20 @@ $(function() {
       continuousScrolling: true,
     });
 
-    $("#form").submit(function() {
+    $("#form").submit(function(e) {
+      e.preventDefault();
+  
       $.ajax({
         type: "POST",
-        url: "https://formspree.io/f/xgejpwwd",
+        url: "https://usebasin.com/f/bccb533a51cd",
         data: $(this).serialize()
       }).done(function() {
+        $('#form')[0].reset();
 
         var tl = anime.timeline({
           easing: 'easeOutExpo',
         });
-
+  
         tl
           .add({
             targets: '.art-submit',
