@@ -1,454 +1,818 @@
-<!doctype html>
-<html lang="zxx">
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- color of address bar in mobile browser -->
-  <meta name="theme-color" content="#2B2B35">
-  <!-- favicon  -->
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-  <!-- font awesome css -->
-  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-  <!-- swiper css -->
-  <link rel="stylesheet" href="css/plugins/swiper.min.css">
-  <!-- fancybox css -->
-  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Djacon | Homepage</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
-  <title>Djacon | Homepage</title>
+    <link rel='stylesheet' id='bootstrap-css' href='css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='leven-main-styles-css' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='leven-dark-styles-css' href='css/dark-styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-shortcode-home-page-third-css' href='css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-option-type-icon-v2-pack-linecons-css' href='css/linecons.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='vidbg-css' href='css/vidbg.css' type='text/css' media='all' />
+
+    <style id='leven-customization-inline-css' type='text/css'>
+        @media only screen and (min-width: 1421px) {
+            .page-container:not(.full-width-container) {
+                max-width: 1320px;
+                border-radius: 40px
+            }
+        }
+    
+        @media only screen and (max-width: 1420px) and (min-width: 991px) {
+            .page-container:not(.full-width-container) {
+                max-width: 94%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 40px
+            }
+        }
+    
+        @media only screen and (min-width:991px) {
+            .page-container.full-width-container {
+                max-width: 100%;
+                border-radius: 0;
+                margin: 0
+            }
+    
+            .site-footer {
+                border-radius: 0
+            }
+    
+            .page-content.single-post {
+                max-width: 1320px;
+                margin: 0 auto
+            }
+    
+            .list-view .comments-area,
+            .list-view .paging-navigation,
+            .list-view .post-content,
+            .list-view .post-navigation,
+            .post-content,
+            .single-post .site-content .comments-area,
+            .single-post .site-content .post-navigation {
+                max-width: 1320px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 50px;
+                padding-right: 50px
+            }
+    
+            .list-view article {
+                max-width: 1320px;
+                margin-left: auto;
+                margin-right: auto
+            }
+        }
+    
+        .page-container.full-width-container {
+            min-height: 100vh;
+            padding-bottom: 120px
+        }
+    
+        .page-container.full-width-container .site-footer {
+            position: absolute;
+            margin: 60px 0 0;
+            right: 0;
+            left: 0;
+            bottom: 0
+        }
+    
+        .lmpixels-scroll-to-top {
+            bottom: 60px
+        }
+    
+        body,
+        p {
+            font-family: Poppins, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 0;
+            font-style: normal;
+            line-height: 1.75em;
+            color: #d5d5d5
+        }
+    
+        .form-control,
+        .form-control:focus,
+        .has-error .form-control,
+        .has-error .form-control:focus {
+            font-family: Poppins, Helvetica, sans-serif
+        }
+    
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Poppins, Helvetica, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #f5f5f5
+        }
+    
+        .logo-symbol,
+        .logo-text {
+            font-family: Poppins, Helvetica, sans-serif
+        }
+    
+        h1 {
+            font-size: 32px;
+            color: #f5f5f5
+        }
+    
+        h2 {
+            font-size: 24px;
+            color: #f5f5f5
+        }
+    
+        h3 {
+            font-size: 18px;
+            color: #f5f5f5
+        }
+    
+        h4 {
+            font-size: 16px;
+            color: #f5f5f5
+        }
+    
+        h5 {
+            font-size: 14px;
+            color: #f5f5f5
+        }
+    
+        h6 {
+            font-size: 12px;
+            color: #f5f5f5
+        }
+    
+        .info-list li .title,
+        .testimonial-author {
+            font-family: Poppins, Helvetica, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #f5f5f5
+        }
+    
+        .mobile-site-title,
+        .timeline-item .item-period {
+            font-family: Poppins, Helvetica, sans-serif
+        }
+    
+        .form-control,
+        .form-control:focus,
+        .has-error .form-control,
+        .has-error .form-control:focus,
+        .header-search input.form-control,
+        input[type=password],
+        input[type=search],
+        input[type=text] {
+            font-family: Poppins, Helvetica, sans-serif;
+            font-weight: 0;
+            font-style: normal
+        }
+    
+        .btn-primary,
+        .btn-secondary,
+        button,
+        input[type=button],
+        input[type=submit] {
+            font-family: Poppins, Helvetica, sans-serif
+        }
+    
+        .header-image img {
+            height: auto;
+            max-height: 50px;
+            width: auto;
+            max-width: 50px
+        }
+    
+        @media only screen and (max-width:992px) {
+            .header-image img {
+                max-height: 30px
+            }
+        }
+    
+        body {
+            background-color: #000
+        }
+    
+        .block-title h2:after,
+        .blog-sidebar .sidebar-title h4:after,
+        .btn-primary:focus,
+        .btn-primary:hover,
+        .calendar_wrap td#today,
+        .cat-links li a,
+        .cat-links li a:hover,
+        .clients.owl-carousel .owl-dot.active span,
+        .clients.owl-carousel .owl-dot:hover span,
+        .clients.owl-carousel .owl-nav .owl-next:hover,
+        .clients.owl-carousel .owl-nav .owl-prev:hover,
+        .fw-pricing .fw-package-wrap.highlight-col .fw-heading-row span:after,
+        .header .social-links a:hover,
+        .info-list li .title:after,
+        .lm-content-slider.owl-carousel .owl-dot.active span,
+        .lm-content-slider.owl-carousel .owl-dot:hover span,
+        .lm-content-slider.owl-carousel .owl-nav .owl-next:hover,
+        .lm-content-slider.owl-carousel .owl-nav .owl-prev:hover,
+        .lm-pricing .lm-package-wrap.highlight-col .lm-heading-row span:after,
+        .logo-symbol,
+        .nothing-found p,
+        .portfolio-grid figure .portfolio-preview-desc h5:after,
+        .portfolio-page-nav>div.nav-item a:hover,
+        .preloader-spinner,
+        .service-icon,
+        .skill-percentage,
+        .testimonials.owl-carousel .owl-dot.active span,
+        .testimonials.owl-carousel .owl-dot:hover span,
+        .testimonials.owl-carousel .owl-nav .owl-next:hover,
+        .testimonials.owl-carousel .owl-nav .owl-prev:hover,
+        button:focus,
+        button:hover,
+        h3.comment-reply-title:after,
+        input[type=button]:focus,
+        input[type=button]:hover,
+        input[type=submit]:focus,
+        input[type=submit]:hover {
+            background-color: #2dd17f
+        }
+    
+        .blog-sidebar .sidebar-item {
+            background-color: #333
+        }
+    
+        .ajax-page-nav>div.nav-item a:hover,
+        .block-title h3 span,
+        .comment-author a:hover,
+        .comment-list .pingback a:hover,
+        .comment-list .trackback a:hover,
+        .comment-metadata a:hover,
+        .comment-reply-title small a:hover,
+        .entry-content .edit-link a:hover,
+        .entry-title a:hover,
+        .form-group-with-icon.form-group-focus i,
+        .header-search button:focus,
+        .header-search button:hover,
+        .image-navigation a:hover,
+        .info-block-w-icon i,
+        .lm-info-block i,
+        .portfolio-grid figure i,
+        .post-navigation a:hover,
+        .project-general-info .fa,
+        .share-buttons a:hover,
+        .site-title span,
+        a {
+            color: #4bffa5
+        }
+    
+        .entry-meta:not(.entry-tags-share) a:hover,
+        a {
+            color: #09c
+        }
+    
+        .post-navigation .meta-nav:hover,
+        a:hover {
+            color: #069
+        }
+    
+        .wp-block-pullquote.is-style-solid-color {
+            background-color: #4bffa5
+        }
+    
+        .wp-block-button.is-style-outline .wp-block-button__link:active,
+        .wp-block-button.is-style-outline .wp-block-button__link:focus,
+        .wp-block-button.is-style-outline .wp-block-button__link:hover,
+        .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
+            background-color: #4bffa5
+        }
+    
+        .blog-sidebar ul li:before,
+        .btn-primary,
+        .btn-primary:focus,
+        .btn-primary:hover,
+        .clients.owl-carousel .owl-nav .owl-next:hover,
+        .clients.owl-carousel .owl-nav .owl-prev:hover,
+        .form-control+.form-control-border,
+        .lm-content-slider.owl-carousel .owl-nav .owl-next:hover,
+        .lm-content-slider.owl-carousel .owl-nav .owl-prev:hover,
+        .logo-symbol,
+        .page-links a:hover,
+        .paging-navigation .page-numbers.current,
+        .paging-navigation .page-numbers:focus,
+        .paging-navigation .page-numbers:hover,
+        .paging-navigation a:hover,
+        .portfolio-grid figure .portfolio-preview-desc h5:after,
+        .share-buttons a:hover,
+        .skill-container,
+        .testimonials.owl-carousel .owl-nav .owl-next:hover,
+        .testimonials.owl-carousel .owl-nav .owl-prev:hover,
+        .timeline-item,
+        .timeline-item h5.item-period,
+        .timeline-item:before,
+        .wp-block-button .wp-block-button__link,
+        .wp-block-pullquote,
+        button,
+        button:focus,
+        button:hover,
+        input[type=button],
+        input[type=button]:focus,
+        input[type=button]:hover,
+        input[type=submit],
+        input[type=submit]:focus,
+        input[type=submit]:hover {
+            border-color: #4bffa5
+        }
+    
+        .page-title {
+            background-color: #252525;
+            border-top-color: #333;
+            border-bottom-color: #333
+        }
+    
+        .page-title h1 {
+            color: #f5f5f5;
+            font-size: 44px;
+            font-family: Poppins, Helvetica, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 0
+        }
+    
+        .page-title .page-subtitle h4 {
+            color: #aaa;
+            font-size: 14px;
+            font-family: Poppins, Helvetica, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0
+        }
+    
+        @media only screen and (max-width:991px) {
+            .page-title h1 {
+                font-size: 35.2px
+            }
+        }
+    
+        .content-page-with-sidebar .page-content,
+        .custom-page-content .page-content,
+        .page-container,
+        .portfolio-page-content,
+        .single-page-content.content-page-with-sidebar .content-area .page-content,
+        .single-post .site-content .has-post-thumbnail .post-content {
+            background-color: #222
+        }
+    
+        .skills-first-style .skill-percentage,
+        .skills-second-style .skill-percentage {
+            border-color: #222
+        }
+    
+        .site-main-menu li a,
+        .site-main-menu li a:hover {
+            font-family: Poppins, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 0;
+            font-style: normal;
+            color: #f5f5f5;
+            letter-spacing: 0
+        }
+    
+        .site-main-menu>li>a {
+            line-height: 3.3em
+        }
+    
+        .site-footer {
+            background-color: #252525;
+            border-color: #333
+        }
+    
+        .footer-copyrights p {
+            color: #ddd
+        }
+    
+        .site-footer .footer-social-links li a {
+            color: #ddd
+        }
+    
+        body {
+            position: initial;
+            -webkit-overflow-scrolling: touch
+        }
+    
+        @media only screen and (min-width:991px) {
+            .page-container.full-width-container {
+                min-height: 100vh;
+                padding-bottom: 120px
+            }
+    
+            .site-footer {
+                position: absolute;
+                margin: 60px 0 0;
+                right: 0;
+                left: 0;
+                bottom: 0
+            }
+        }
+    
+        * {
+            word-break: keep-all;
+            -moz-hyphens: manual;
+            -ms-hyphens: manual;
+            -webkit-hyphens: manual;
+            hyphens: manual
+        }
+    
+        .page-scroll {
+            min-height: -webkit-fill-available
+        }
+    
+        @media only screen and (max-width:991px) {
+            html {
+                position: relative;
+                height: auto;
+                min-height: 100%;
+                width: 100%;
+                overflow-x: hidden;
+                overflow-y: auto
+            }
+    
+            body {
+                position: relative;
+                overflow: hidden;
+                height: auto
+            }
+        }
+    
+        .portfolio-grid {
+            position: relative;
+            overflow: hidden
+        }
+    </style>
+
+    <style id='fw-shortcode-home-page-third-inline-css' type='text/css'>
+        #home_content_cc1afe4be543928ea39a628af5774616 .start-page-full-width .hp-text-block {
+            background-color: #333;
+        }
+
+        #home_content_cc1afe4be543928ea39a628af5774616 .hp-main-title {
+            color: #f5f5f5;
+        }
+
+        #home_content_cc1afe4be543928ea39a628af5774616 .start-page-full-width .hp-text-block .sp-subtitle {
+            color: #a5a5a5;
+        }
+
+        #home_content_cc1afe4be543928ea39a628af5774616 .hp-text-block p,
+        #home_content_cc1afe4be543928ea39a628af5774616 .hp-text-block span,
+        #home_content_cc1afe4be543928ea39a628af5774616 .hp-text-block li {
+            color: #d5d5d5;
+        }
+
+        #home_content_cc1afe4be543928ea39a628af5774616 .start-page-full-width .inner-content .fill-block {
+            background-image: url(img/main.png);
+        }
+    </style>
+
+    <link rel='stylesheet' id='leven-google-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic'
+        type='text/css' media='all' />
+
+    <script type='text/javascript' src='js/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.js' id='jquery-migrate-js'></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="icon" href="img/favicon.svg"/>
 </head>
 
 <body>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B751Q3XBFC"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B751Q3XBFC"></script>
 
-      gtag('config', 'G-B751Q3XBFC');
-  </script>
+    <!-- Scroll To Top Button -->
+    <div class="lmpixels-scroll-to-top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <!-- /Scroll To Top Button -->
 
-  <div class="art-app">
-    <div class="art-mobile-top-bar" style="position: fixed;"></div>
-    <div class="art-app-wrapper">
-      <div class="art-app-container">
-        <div class="art-info-bar">
-          <div class="art-info-bar-frame">
-            <div class="art-info-bar-header">
-              <div class="art-info-bar-btn">
-                <i class="fas fa-ellipsis-v"></i>
-              </div>
-            </div>
-            <div class="art-header">
-              <div class="art-avatar">
-                <div class="art-avatar-curtain"><img src="img/face-1.jpg" alt="avatar"></div>
-                <div class="art-lamp-light">
-                  <!-- add class 'art-not-available' if not available-->
-                  <div class="art-available-lamp"></div>
-                </div>
-              </div>
-              <h5 class="art-name mb-10"><a href="/">Daniel Ille</a></h5>
-              <div class="art-sm-text">ML Engineer</div>
-            </div>
+    <div class="page-scroll">
+        <div id="page_container" class="page-container full-width-container bg-move-effect theme-style-dark"
+            data-animation="transition-puff-in">
 
-            <div id="scrollbar2" class="art-scroll-frame">
-              <div class="art-table p-15-15">
-                <ul>
-                  <li><h6>About me:</h6></li>
-                  <li><p>Machine Learning Engineer, focused on learning new technologies and applying them to new projects</p></li>
-                </ul>
-              </div>
+            <!-- Header -->
+            <header id="site_header" class="header">
+                <div class="header-content clearfix">
 
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <div class="art-lang-skills p-30-15">
-                <div class="art-lang-skills-item">
-                  <div id="circleprog1" class="art-cirkle-progress"></div>
-                  <h6>Russian</h6>
-                </div>
-
-                <div class="art-lang-skills-item">
-                  <div id="circleprog2" class="art-cirkle-progress"></div>
-                  <h6>English</h6>
-                </div>
-
-                <div class="art-lang-skills-item">
-                  <div id="circleprog3" class="art-cirkle-progress"></div>
-                  <h6>Turkish</h6>
-                </div>
-              </div>
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <div class="art-hard-skills p-30-15">
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <h6>Python</h6>
-                  </div>
-                  <div class="art-line-progress">
-                    <div id="lineprog1"></div>
-                  </div>
-                </div>
-
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <h6>Numpy / Pandas</h6>
-                  </div>
-                  <div class="art-line-progress">
-                    <div id="lineprog2"></div>
-                  </div>
-                </div>
-
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <h6>Pytorch</h6>
-                  </div>
-                  <div class="art-line-progress">
-                    <div id="lineprog3"></div>
-                  </div>
-                </div>
-
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <h6>Computer Vision</h6>
-                  </div>
-                  <div class="art-line-progress">
-                    <div id="lineprog4"></div>
-                  </div>
-                </div>
-
-                <div class="art-hard-skills-item">
-                  <div class="art-skill-heading">
-                    <h6>NLP</h6>
-                  </div>
-                  <div class="art-line-progress">
-                    <div id="lineprog5"></div>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <ul class="art-knowledge-list p-15-0">
-                <li>Sklearn, W&B, Optuna</li>
-                <li>Hadoop, Hive, PySpark, Polars</li>
-                <li>Flask, Django, Fastapi</li>
-                <li>Docker, Git, Linux</li>
-              </ul>
-
-              <!-- divider -->
-              <div class="art-ls-divider"></div>
-
-              <div class="art-links-frame p-15-15">
-                <!-- download cv button -->
-                <a href="files/cv.pdf" class="art-link" download data-no-swup>Download cv <i class="fas fa-download"></i></a>
-              </div>
-            </div>
-
-            <div class="art-ls-social">
-              <a href="https://t.me/Djacon" target="_blank" data-no-swup><i class="fab fa-telegram"></i></a>
-              <a href="https://github.com/Djacon" target="_blank" data-no-swup><i class="fab fa-github"></i></a>
-              <a href="https://discordapp.com/users/417714567632781313/" target="_blank" data-no-swup><i class="fab fa-discord"></i></a>
-              <a href="https://kaggle.com/djacon" target="_blank" data-no-swup><i class="fab fa-kaggle"></i></a>
-              <a href="mailto:djaconfr@gmail.com" target="_blank" data-no-swup><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="art-content">
-          <div class="art-curtain"></div>
-          <div class="art-top-bg" style="background-image: url(img/bg.jpg)">
-            <div class="art-top-bg-overlay"></div>
-          </div>
-
-          <div class="transition-fade" id="swup">
-            <div id="scrollbar" class="art-scroll-frame">
-              <div class="container-fluid">
-                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
-                  <div class="col-lg-12">
-                    <div class="art-a art-banner" style="background-image: url(img/bg.jpg)">
-                      <div class="art-banner-back"></div>
-                      <div class="art-banner-dec"></div>
-                      <div class="art-banner-overlay">
-                        <div class="art-banner-title">
-                          <h1 class="mb-15">Discover Amazing <br>World of AI!</h1>
-                          <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build <span class="txt-rotate" data-period="2000"
-                              data-rotate='[ "ai models.", "database management.", "model deployment.", "automation tools." ]'></span>&lt;/<i>code</i>&gt;</div>
-                          <div class="art-buttons-frame">
-                            <a href="portfolio.html" target="_blank" class="art-btn art-btn-md"><span>Explore now</span></a>
-                          </div>
-                        </div>
-                      </div>
+                    <!-- Text Logo -->
+                    <div class="text-logo">
+                        <a href="index">
+                            <div class="logo-symbol">D</div>
+                            <div class="logo-text">Daniel <span>Ille</span></div>
+                        </a>
                     </div>
-                  </div>
-                </div>
-              </div>
+                    <!-- /Text Logo -->
 
-              <div class="container-fluid">
-                <div class="row p-30-0">
-                  <div class="col-md-3 col-6">
-                    <div class="art-counter-frame">
-                      <div class="art-counter-box">
-                        <span class="art-counter">2</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <h6>Years Experience</h6>
-                    </div>
-                  </div>
 
-                  <div class="col-md-3 col-6">
-                    <div class="art-counter-frame">
-                      <div class="art-counter-box">
-                        <span class="art-counter">10</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <h6>Completed Projects</h6>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 col-6">
-                    <div class="art-counter-frame">
-                      <div class="art-counter-box">
-                        <span class="art-counter">10</span></span><span class="art-counter-plus">+</span>
-                      </div>
-                      <h6>Happy Customers</h6>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 col-6">
-                    <div class="art-counter-frame">
-                      <div class="art-counter-box">
-                        <span class="art-counter">20</span><span class="art-counter-plus">+</span>
-                      </div>
-                      <h6>Completed Courses</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="art-section-title">
-                      <div class="art-title-frame">
-                        <h4>My Services</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="art-a art-service-icon-box">
-                      <div class="art-service-ib-content">
-                        <h5 class="mb-15">Computer Vision (CV)</h5>
-                        <div class="mb-15">Computer Vision is a branch of artificial intelligence (AI) that focuses on teaching machines to understand and interpret visual information from the world, including images and videos. It has applications in autonomous systems, healthcare, augmented reality, quality control, and more, revolutionizing how machines perceive and interact with the visual world.</div>
-                        <div class="art-buttons-frame"><a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="art-a art-service-icon-box">
-                      <div class="art-service-ib-content">
-                        <h5 class="mb-15">Natural Language Processing</h5>
-                        <div class="mb-15">NLP is a field of artificial intelligence that focuses on the interaction between computers and human language. It encompasses various tasks, including text analysis, language translation, sentiment analysis, and information extraction, and plays a vital role in applications like chatbots, language translation services, and text analytics tools.</div>
-                        <div class="art-buttons-frame"><a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="art-a art-service-icon-box">
-                      <div class="art-service-ib-content">
-                        <h5 class="mb-15">Recommendation System</h5>
-                        <div class="mb-15">Recommendation System, is a field that deals with developing algorithms to provide personalized recommendations to users. These systems are widely used in various applications, such as e-commerce, streaming platforms, and content recommendations, to suggest products, services, or content that are most relevant to individual users preferences and behavior.</div>
-                        <div class="art-buttons-frame"><a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="art-a art-service-icon-box">
-                      <div class="art-service-ib-content">
-                        <h5 class="mb-15">Database Management</h5>
-                        <div class="mb-15">Database Management is the process of efficiently processing and organizing data for ML projects. It involves tasks such as data collection, storage and optimization to ensure that the data is readily available and appropriately structured for training models. Effective database directly impacts data quality, model training, and overall system performance.</div>
-                        <div class="art-buttons-frame"><a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6">
-                    <div class="art-a art-service-icon-box">
-                      <div class="art-service-ib-content">
-                        <h5 class="mb-15">Model Deployment</h5>
-                        <div class="mb-15">Model Deployment is the process of deploying a trained machine learning model into a live, operational system to make real-time predictions or classifications based on incoming data. It's the bridge that connects the model's analytical capabilities to practical applications in various domains, from recommendation systems to autonomous vehicles.</div>
-                        <div class="art-buttons-frame"><a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="container-fluid">
-                <div class="row p-0-0">
-                  <div class="col-lg-12">
-                    <div class="art-section-title">
-                      <div class="art-title-frame">
-                        <h4>Price Plans</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="art-a art-price">
-                      <div class="art-price-body">
-                        <h5 class="mb-30">Starter Price</h5>
-                        <div class="art-price-cost">
-                          <div class="art-number">FREE<sup>*</sup></div>
-                        </div>
-                        <ul class="art-price-list">
-                          <li>Ui Design</li>
-                          <li>Web Development</li>
-                          <li class="art-empty-item">Logo design</li>
-                          <li class="art-empty-item">SEO optimization</li>
-                          <li class="art-empty-item">Wordpress integration</li>
+                    <!-- Navigation -->
+                    <div class="site-nav mobile-menu-hide">
+                        <ul id="menu-classic-menu" class="leven-classic-menu site-main-menu">
+                            <li id="menu-item-160"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-160">
+                                <a href="javascript:void 0" data-hover="1">Home</a>
+                            </li>
+                            <li id="menu-item-174"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a
+                                    href="resume"
+                                    data-hover="1">Resume</a></li>
+                            <li id="menu-item-28"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28">
+                                <a href="javascript:void 0"
+                                    data-hover="1">Portfolio <img style="vertical-align: middle; color: white" height="14px" width="14px" src="img/arrow-bottom.svg" alt="arrow-bottom"></a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-33"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a
+                                            href="portfolio"
+                                            data-hover="1">All Projects</a></li>
+                                    <li id="menu-item-29"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a
+                                            href="project-1"
+                                            data-hover="1">Text Summarization</a></li>
+                                    <li id="menu-item-41"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a
+                                            href="project-2"
+                                            data-hover="1">Emotion Detection</a></li>
+                                    <li id="menu-item-40"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a
+                                            href="project-3"
+                                            data-hover="1">Digit Recognition</a></li>
+                                    <li id="menu-item-42"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a
+                                                href="project-4"
+                                                data-hover="1">Letter Recognition</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-191"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a
+                                    href="contact"
+                                    data-hover="1">Contact</a></li>
                         </ul>
-                        <a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a>
-                        <div class="art-asterisk"><sup>*</sup>Free only when ordering paid services</div>
-                      </div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-4">
-                    <div class="art-a art-price art-popular-price">
-                      <div class="art-price-body">
-                        <h5 class="mb-30">Hourly payment</h5>
-                        <div class="art-price-cost">
-                          <div class="art-number"><span>$</span>29<span>h</span></div>
-                        </div>
-                        <ul class="art-price-list">
-                          <li>Ui Design</li>
-                          <li>Web Development</li>
-                          <li>Logo design</li>
-                          <li class="art-empty-item">SEO optimization</li>
-                          <li class="art-empty-item">Wordpress integration</li>
-                        </ul>
-                        <a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <div class="art-a art-price">
-                      <div class="art-price-body">
-                        <h5 class="mb-30"> Full time</h5>
-                        <div class="art-price-cost">
-                          <div class="art-number"><span>$</span>2999<span>m</span></div>
-                        </div>
-                        <ul class="art-price-list">
-                          <li>Ui Design</li>
-                          <li>Web Development</li>
-                          <li>Logo design</li>
-                          <li>SEO optimization</li>
-                          <li>Wordpress integration</li>
-                        </ul>
-                        <a href="contact.html" class="art-link art-color-link art-w-chevron">Order now</a>
-                      </div>
-                    </div>
-                  </div>
+                    <a class="menu-toggle mobile-visible">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
-              </div> -->
+            </header>
 
-              <div class="container-fluid">
-                <footer>
-                  <div class="art-copy">© 2023 Djacon</div>
-                </footer>
-              </div>
+            <!-- /Header -->
+            <div id="main" class="site-main">
+                <div id="main-content" class="single-page-content">
+                    <div id="primary" class="content-area">
+                        <div id="content" class="page-content site-content single-post" role="main">
+                            <article id="post-319" class="post-319 page type-page status-publish hentry">
+                                <div class="entry-content">
+                                    <div class="fw-page-builder-content">
+                                        <section class="fw-main-row ">
+                                            <div class="fw-container">
+                                                <div class="row">
+                                                    <div class=" col-xs-12 col-sm-12 ">
+                                                        <div id="col_inner_c6a9c460793069b48eaf67f61ccb2fb7"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div id="home_content_cc1afe4be543928ea39a628af5774616"
+                                                                class="home-content third-style">
+                                                                <div class="start-page-full-width">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                            <div class="inner-content">
+                                                                                <div class="fill-block"
+                                                                                    data-container=".start-page-full-width .inner-content .fill-block"
+                                                                                    data-videowebm="img/main.webm"
+                                                                                    data-videomp="img/main.mp4"
+                                                                                    data-img="img/main.png">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                                                            <div class="inner-content inner-text-block">
+                                                                                <div class="hp-text-block">
+                                                                                    <div class="item">
+                                                                                        <div class="sp-subtitle">ML Engineer</div>
+                                                                                    </div>
+                                                                                    <h2 class="hp-main-title">Daniel Ille</h2>
+
+                                                                                    <p>
+                                                                                        I'm a technology enthusiast with a burning curiosity for the newest innovations.
+                                                                                        My journey as a Machine Learning Engineer is a thrilling adventure of exploring cutting-edge tools and turning them into real-world wonders.
+                                                                                        I'm here to make a positive impact, one smart solution at a time. 🚀
+                                                                                    </p>
+
+                                                                                    <div class="hp-buttons">
+                                                                                        <a href="files/cv.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+                                                                                        <a href="contact" target="_self" id="" class="btn btn-secondary">Contact</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="fw-divider-space" style="padding-top: 50px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+
+
+                                                    <div class=" col-xs-12 col-sm-12 ">
+                                                        <div id="col_inner_9ca21579a40e660a06132eba3d5ad0bc"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div class="block-title">
+                                                                <h2>What I Do</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+
+
+                                                    <div class=" col-xs-12 col-sm-6 ">
+                                                        <div id="col_inner_0612d0e5ea19c423d17be027788fdd94"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div id="info-list-652a6425c9cfa" class="info-list-w-icon">
+
+                                                                <div class="info-block-w-icon">
+                                                                    <div class="ci-icon">
+                                                                        <i class="linecons linecons-pen"></i>
+                                                                    </div>
+                                                                    <div class="ci-text">
+                                                                        <h4>NLP (Natural Language Processing)</h4>
+                                                                        <p>
+                                                                            NLP is a field of artificial intelligence that focuses on the interaction between computers and human language. It encompasses various tasks, including text analysis, language translation, sentiment analysis, and information extraction, and plays a vital role in applications like chatbots, language translation services, and text analytics tools.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-block-w-icon">
+                                                                    <div class="ci-icon">
+                                                                        <i class="linecons linecons-world"></i>
+                                                                    </div>
+                                                                    <div class="ci-text">
+                                                                        <h4>RecSys (Recommendation System)</h4>
+                                                                        <p>
+                                                                            Recommendation System, is a field that deals with developing algorithms to provide personalized recommendations to users. These systems are widely used in various applications, such as e-commerce, streaming platforms, and content recommendations, to suggest products, services, or content that are most relevant to individual users preferences and behavior.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class=" col-xs-12 col-sm-6 ">
+                                                        <div id="col_inner_147520f8bb0d43728a6352955d5423f9"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div id="info-list-652a6425c9e29" class="info-list-w-icon">
+
+                                                                <div class="info-block-w-icon">
+                                                                    <div class="ci-icon">
+                                                                        <i class="linecons linecons-video"></i>
+                                                                    </div>
+                                                                    <div class="ci-text">
+                                                                        <h4>CV (Computer Vision)</h4>
+                                                                        <p>
+                                                                            CV is a branch of artificial intelligence (AI) that focuses on teaching machines to understand and interpret visual information from the world, including images and videos. It has applications in autonomous systems, healthcare, augmented reality, quality control, and more, revolutionizing how machines perceive and interact with the visual world.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info-block-w-icon">
+                                                                    <div class="ci-icon">
+                                                                        <i class="linecons linecons-data"></i>
+                                                                    </div>
+                                                                    <div class="ci-text">
+                                                                        <h4>Model Deployment</h4>
+                                                                        <p>
+                                                                            Model Deployment is the process of deploying a trained machine learning model into a live, operational system to make real-time predictions or classifications based on incoming data. It's the bridge that connects the model's analytical capabilities to practical applications in various domains, from recommendation systems to autonomous vehicles.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class=" col-xs-12 col-sm-12 ">
+                                                        <div id="col_inner_17fba7d87df0a293be5b8efafda61929"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div class="block-title">
+                                                                <h2>About Me</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class=" col-xs-12 col-sm-3 ">
+                                                        <div id="col_inner_e932b163d8af944c3d257f96270087b2"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+                                                            <div class="lm-info-block gray-default">
+                                                                <i class="linecons linecons-clock"></i>
+                                                                <h4>Years Experience</h4>
+                                                                <span class="lm-info-block-value">2+</span>
+                                                                <span class="lm-info-block-text"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" col-xs-12 col-sm-3 ">
+                                                        <div id="col_inner_2e22f46b20c082b5690abe3a34b03ae4"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+                                                            <div class="lm-info-block gray-default">
+                                                                <i class="linecons linecons-heart"></i>
+                                                                <h4>Happy Clients</h4>
+                                                                <span class="lm-info-block-value">10+</span>
+                                                                <span class="lm-info-block-text"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" col-xs-12 col-sm-3 ">
+                                                        <div id="col_inner_a6eb3c1f9b1a0976090cde622c944480"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div class="lm-info-block gray-default">
+                                                                <i class="linecons linecons-star"></i>
+                                                                <h4>Completed Courses</h4>
+                                                                <span class="lm-info-block-value">20+</span>
+                                                                <span class="lm-info-block-text"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" col-xs-12 col-sm-3 ">
+                                                        <div id="col_inner_ea56a538e997a3fe7d1dcce3121bdc0e"
+                                                            class="fw-col-inner" data-paddings="0px 0px 0px 0px">
+
+                                                            <div class="lm-info-block gray-default">
+                                                                <i class="linecons linecons-stack"></i>
+                                                                <h4>Completed Projects</h4>
+                                                                <span class="lm-info-block-value">10+</span>
+                                                                <span class="lm-info-block-text"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div><!-- .entry-content -->
+                            </article><!-- #post-## -->
+                        </div><!-- #content -->
+                    </div><!-- #primary -->
+                </div><!-- #main-content -->
             </div>
-          </div>
-        </div>
 
-        <div class="art-menu-bar">
-          <div class="art-menu-bar-frame">
-            <div class="art-menu-bar-header">
-              <div class="art-menu-bar-btn">
-                <span></span>
-              </div>
-            </div>
-
-            <div class="art-current-page"></div>
-            <div class="art-scroll-frame">
-              <nav id="swupMenu">
-                <ul class="main-menu">
-                  <li class="menu-item current-menu-item"><a href="/">Home</a></li>
-                  <li class="menu-item menu-item-has-children">
-                    <a data-no-swup>Portfolio</a>
-                    <ul class="sub-menu">
-                      <li class="menu-item"><a href="portfolio.html">All Projects</a></li>
-                      <li class="menu-item"><a href="portfolio-single.html">Text Summarization</a></li>
-                      <li class="menu-item"><a href="portfolio-single-2.html">Emotion Detection</a></li>
-                      <li class="menu-item"><a href="portfolio-single-3.html">Digit Recognition</a></li>
-                      <li class="menu-item"><a href="portfolio-single-4.html">Letter Recognition</a></li>
-                      <li class="menu-item"><a href="portfolio.html">Project 5</a></li>
+            <footer class="site-footer clearfix">
+                <div class="footer-social">
+                    <ul class="footer-social-links">
+                        <li>
+                            <a href="https://t.me/Djacon" target="_blank">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Djacon" target="_blank">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://discordapp.com/users/417714567632781313/" target="_blank">Discord</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="menu-item"><a href="history.html">History</a></li>
-                  <li class="menu-item"><a href="contact.html">Contact</a></li>
-                  <!-- <li class="menu-item menu-item-has-children">
-                    <a href="#." data-no-swup>Blog</a>
-                    <ul class="sub-menu">
-                      <li class="menu-item"><a href="blog-2-col.html">2 column</a></li>
-                      <li class="menu-item"><a href="blog-3-col.html">3 column</a></li>
-                      <li class="menu-item"><a href="blog-post.html">Publication</a></li>
-                    </ul>
-                  </li> -->
-                </ul>
-              </nav>
-            </div>
-          </div>
+                </div>
+
+                <div class="footer-copyrights">
+                    <p>© 2023 Djacon</p>
+                </div>
+            </footer>
         </div>
-      </div>
     </div>
 
-    <div class="art-preloader">
-      <div class="art-preloader-content">
-        <h4>Daniel Ille</h4>
-        <div id="preloader" class="art-preloader-load"></div>
-      </div>
-    </div>
-  </div>
+    <script type='text/javascript' src='js/imagesloader.js' id='imagesloaded-js'></script>
+    <script type='text/javascript' src='js/magnific-popup.js' id='magnific-popup-js'></script>
+    <script type='text/javascript' src='js/main.js' id='leven-jquery-main-js'></script>
 
-  <!-- jquery js -->
-  <script src="js/plugins/jquery.min.js"></script>
-  <!-- anime js -->
-  <script src="js/plugins/anime.min.js"></script>
-  <!-- swiper js -->
-  <script src="js/plugins/swiper.min.js"></script>
-  <!-- progressbar js -->
-  <script src="js/plugins/progressbar.min.js"></script>
-  <!-- smooth scrollbar js -->
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- overscroll js -->
-  <script src="js/plugins/overscroll.min.js"></script>
-  <!-- typing js -->
-  <script src="js/plugins/typing.min.js"></script>
-  <!-- isotope js -->
-  <script src="js/plugins/isotope.min.js"></script>
-  <!-- fancybox js -->
-  <script src="js/plugins/fancybox.min.js"></script>
-  <!-- swup js -->
-  <script src="js/plugins/swup.min.js"></script>
-
-  <!-- main js -->
-  <script src="js/main.js"></script>
-
+    <script type='text/javascript' src='js/masonry.min.js' id='masonry-js'></script>
+    <script type='text/javascript' src='js/vidbg.js' id='vidbg-js'></script>
+    <script type='text/javascript' src='js/scripts.js' id='leven-theme-shortcode-home-page-3-js'></script>
 </body>
-
 </html>
