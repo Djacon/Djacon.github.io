@@ -158,21 +158,12 @@ ul.social-links li a:hover {
     border-color: #444
 }
 
-.theme-style-dark .testimonials.owl-carousel .owl-nav .owl-prev,.theme-style-dark .testimonials.owl-carousel .owl-nav .owl-next,.theme-style-dark .clients.owl-carousel .owl-nav .owl-prev,.theme-style-dark .clients.owl-carousel .owl-nav .owl-next {
-    background-color: #555;
-    border-color: #333
-}
-
 .theme-style-dark .testimonial-icon {
     color: #454545
 }
 
 .theme-style-dark .testimonial-icon-big {
     color: #353535
-}
-
-.clients.owl-carousel .owl-dot span,.testimonials.owl-carousel .owl-dot span {
-    background-color: #454545
 }
 
 .fun-fact-block {
