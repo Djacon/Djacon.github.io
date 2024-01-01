@@ -146,6 +146,13 @@ if (maxWidth > 991) {
             setText('main-title-project-2', project_ru[1]);
             setText('main-title-project-3', project_ru[2]);
             setText('main-title-project-4', project_ru[3]);
+
+            setText('project-desc-title', 'Краткое описание');
+            setText('project-date-title', 'Дата');
+            setText('project-author-title', 'Автор(ы)');
+            setText('project-stack-title', 'Стек Технологий');
+            setText('project-about-title', 'О проекте');
+            setText('project-link-title', 'Попробовать сейчас');
             // </Projects>
 
             // <404>
@@ -259,6 +266,13 @@ if (maxWidth > 991) {
             setText('main-title-project-2', project_tr[1]);
             setText('main-title-project-3', project_tr[2]);
             setText('main-title-project-4', project_tr[3]);
+
+            setText('project-desc-title', 'Kısa Açıklama');
+            setText('project-date-title', 'Tarih');
+            setText('project-author-title', 'Yazar(lar)');
+            setText('project-stack-title', 'Teknik Yığın');
+            setText('project-about-title', 'Proje Hakkında');
+            setText('project-link-title', 'Şimdi dene');
             // </Projects>
 
             // <404>
