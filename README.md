@@ -17,7 +17,7 @@ This project represents my virtual space where I showcase my professional skills
 
 ## Best practices
 
-[![Google PageSpeeg](https://raw.githubusercontent.com/Djacon/djacon.github.io/199b9e0238af003601300ddb5a042ce1a4ca2ffa/assets/svg/performance.svg)](https://pagespeed.web.dev/analysis/https-djacon-github-io/gvzssra96u?form_factor=desktop)
+[![Google PageSpeeg](https://raw.githubusercontent.com/Djacon/djacon.github.io/ffcdd283f7d39bf540dbfd25240a9970e3603729/assets/svg/performance.svg)](https://pagespeed.web.dev/analysis/https-djacon-github-io/gvzssra96u?form_factor=desktop)
 
 
 ## Get in Touch
