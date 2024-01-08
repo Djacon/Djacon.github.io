@@ -34,11 +34,14 @@ if (maxWidth > 991) {
         document.documentElement.setAttribute('lang', lang);
         if (lang == 'ru') {
             // <NavBar>
-            document.getElementById('language-main').innerText = 'Русский';
+            let el = document.getElementById('language-main')
+            if (el) {
+                el.innerText = 'Русский';
+            }
             setText('logo-firstname', 'Даниел');
             setText('logo-lastname', 'Илле');
 
-            let el = document.getElementsByClassName('nav-item');
+            el = document.getElementsByClassName('nav-item');
             let nav_ru = ['Главная', 'Обо мне', 'Портфолио', 'Контакты'];
             for (let i = 0; i < el.length; i++) {
                 el[i].innerText = nav_ru[i];
@@ -147,11 +150,20 @@ if (maxWidth > 991) {
             setText('main-title-project-4', project_ru[3]);
             // </Projects>
 
+            // <404>
+            setText('404-title', 'Страница не найдена');
+            setText('404-desc', 'Страница, которую вы ищете, не существует или была перемещена');
+            setText('404-btn', 'Вернуться в главное меню');
+            // </404>
+
         } else if (lang == 'tr') {
             // <NavBar>
-            document.getElementsByClassName('language-main')[0].innerText = 'Turkçe';
+            let el = document.getElementById('language-main')
+            if (el) {
+                el.innerText = 'Turkçe';
+            }
 
-            let el = document.getElementsByClassName('nav-item');
+            el = document.getElementsByClassName('nav-item');
             nav_tr = ['Anasayfa', 'Hakkımda', 'Portföy', 'İletişim'];
             for (let i = 0; i < el.length; i++) {
                 el[i].innerText = nav_tr[i];
@@ -253,6 +265,12 @@ if (maxWidth > 991) {
             setText('main-title-project-3', project_tr[2]);
             setText('main-title-project-4', project_tr[3]);
             // </Projects>
+
+            // <404>
+            setText('404-title', 'Sayfa Bulunamadı');
+            setText('404-desc', 'Aradığınız sayfa mevcut değil veya taşınmış');
+            setText('404-btn', 'Ana Sayfaya Geri Dön');
+            // </404>
         }
 
         let languageBtn = document.getElementsByClassName("language-2");

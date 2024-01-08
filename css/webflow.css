@@ -2789,20 +2789,20 @@ figcaption {
 
 .link {
   float: left;
-  color: #858585;
+  color: #bbb;
   text-align: left;
   -webkit-text-stroke-color: transparent;
   margin-left: 0;
   margin-right: 25px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   transition: color .2s;
   position: relative;
 }
 
 .link:hover {
-  color: #d5d5d5;
+  color: #f5f5f5;
 }
 
 .copyright {
