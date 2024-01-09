@@ -1,7 +1,5 @@
 ## Djacon's Website
 
-Welcome to my portfolio repository! 🚀
-
 ## About the Project
 
 This project represents my virtual space where I showcase my professional skills, projects, and achievements. Here you'll find interesting machine learning projects I've worked on, along with information about my experience and skills
