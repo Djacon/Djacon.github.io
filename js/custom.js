@@ -17,7 +17,6 @@ if (maxWidth > 991) {
         }
         return (lang == 'ru') ? 'Russian': (lang == 'tr') ? 'Turkish': 'English'; 
     }
-
     function setText(id, text) {
         let el = document.getElementById(id);
         if (!el) return;
@@ -55,7 +54,7 @@ if (maxWidth > 991) {
 
             setText('intro-about-full-name', 'Даниел Илле');
             setText('intro-about-contact-btn', 'Контакты');
-            setText('intro-about-description', `Я — молодой технологический энтузиаст, с горячим интересом к последним инновациям. Мой путь в области машинного обучения — захватывающее приключение, в ходе которого я изучаю передовые инструменты и превращаю их в реальные достижения. Моя цель — оказывать положительное влияние, предлагая умные решения одно за другим. 🚀`);
+            setText('intro-about-description', `Я — молодой технологический энтузиаст, с горячим интересом к последним инновациям. Мой путь в области машинного обучения это захватывающее приключение, в ходе которого я изучаю передовые инструменты и превращаю их в реальные достижения. Моя цель — оказывать положительное влияние, предлагая умные решения одно за другим. 🚀`);
 
             el = document.getElementsByClassName('info-desc');
             if (el.length) {
@@ -229,11 +228,18 @@ if (maxWidth > 991) {
         }
     }
 
+    // Predict user language
     if (!localStorage.language) {
-        localStorage.language = 'en';
-    } else {
-        updateLang();
+        let userLanguage = navigator.language || navigator.userLanguage;
+        if (['ru', 'ru-RU'].includes(userLanguage)) {
+            localStorage.language = 'ru';
+        } else if (userLanguage === 'tr') {
+            localStorage.language = 'tr';            
+        } else {
+            localStorage.language = 'en';
+        }
     }
+    updateLang();
 }
 
 let el = document.getElementsByClassName('category');
