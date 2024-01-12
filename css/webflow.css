@@ -2655,7 +2655,7 @@ figcaption {
   min-height: 300px;
   color: #fff;
   background-color: #222;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/65941f488257fdaec59e56d5_main.webp");
+  background-image: url("../img/main.webp");
   background-position: 0%;
   background-size: cover;
   justify-content: center;
@@ -2938,7 +2938,7 @@ figcaption {
   height: 620px;
   color: #fff;
   background-color: #f4f4f4;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6590181c560e9077a39f9e46_portfolio%201%20-%20wide.svg");
+  background-image: url("6590181c560e9077a39f9e46_portfolio%201%20-%20wide.svg");
   background-position: 50%;
   background-size: cover;
   justify-content: center;
@@ -2949,18 +2949,18 @@ figcaption {
 
 .project-overview-header.cc-project-2-header {
   width: 100%;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d7771e6491a6bf4f9b8b_main.webp");
+  background-image: url("../img/projects/summarization/main.webp");
   background-position: 50%;
   border-radius: 0;
   margin: 0% 0% 0;
 }
 
 .project-overview-header.cc-project-2-header.emotion-overview {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d800c0fdf07e5ff1364f_main.webp");
+  background-image: url("../img/projects/detection/main.webp");
 }
 
 .project-overview-header.cc-project-3-header {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6590181c560e9077a39f9e47_portfolio%203%20-%20wide.svg");
+  background-image: url("6590181c560e9077a39f9e47_portfolio%203%20-%20wide.svg");
   background-size: cover;
 }
 
@@ -4125,7 +4125,7 @@ figcaption {
 .project-block {
   height: 300px;
   background-color: #333;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d7771e6491a6bf4f9b8b_main.webp");
+  background-image: url("../img/projects/summarization/main.webp");
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4202,7 +4202,7 @@ figcaption {
 
 .div-block-23 {
   height: 250px;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6593fc55ccedd2e9268e7950_main.jpg");
+  background-image: url("../img/projects/digit/main.jpg");
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4217,7 +4217,7 @@ figcaption {
 .project-block-2 {
   height: 250px;
   background-color: #333;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6593fc484eeb71d5dcdf533c_main.jpg");
+  background-image: url("../img/projects/detection/main.jpg");
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4226,7 +4226,7 @@ figcaption {
 .project-block-3 {
   height: 300px;
   background-color: #333;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d800c0fdf07e5ff1364f_main.webp");
+  background-image: url("../img/projects/detection/main.webp");
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4246,7 +4246,7 @@ figcaption {
 .project-block-4 {
   height: 300px;
   background-color: #333;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597e77cc4955670be1ef92f_main.webp");
+  background-image: url("../img/projects/digit/main.webp");
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4265,7 +4265,7 @@ figcaption {
 .project-block-5 {
   height: 300px;
   background-color: #333;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597e782ee2050ef11bf014b_main.webp");
+  background-image: url("../img/projects/letter/main.webp");
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4403,7 +4403,7 @@ figcaption {
 }
 
 .slide {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d7d04e1e0284aa3d8608_1.webp");
+  background-image: url("../img/projects/summarization/1.webp");
   background-position: 50% 0;
   background-repeat: repeat;
   background-size: cover;
@@ -4411,17 +4411,17 @@ figcaption {
 }
 
 .slide.emoslide {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d805a6320c678323e229_1.webp");
+  background-image: url("../img/projects/detection/1.webp");
 }
 
 .slide-2 {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d7d3eeb1aae4e7e95c49_2.webp");
+  background-image: url("../img/projects/summarization/2.webp");
   background-position: 50% 0;
   background-size: cover;
 }
 
 .slide-2.emoslide2 {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d80766025cd6d30ac86b_2.webp");
+  background-image: url("../img/projects/detection/2.webp");
 }
 
 .slide-nav {
@@ -4430,13 +4430,13 @@ figcaption {
 }
 
 .slide-3 {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d7d53d29778e19e4d2cb_3.webp");
+  background-image: url("../img/projects/summarization/3.webp");
   background-position: 50% 0;
   background-size: cover;
 }
 
 .slide-3.emoslide3 {
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/6597d8093238bf3fe83e2e28_3.webp");
+  background-image: url("../img/projects/detection/3.webp");
 }
 
 .main-img-section {
@@ -4549,7 +4549,7 @@ figcaption {
   height: 548px;
   max-height: 548px;
   min-height: 300px;
-  background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/65941f488257fdaec59e56d5_main.webp");
+  background-image: url("../img/main.webp");
   background-position: 0 0;
   background-size: cover;
 }
@@ -5095,7 +5095,7 @@ figcaption {
   }
 
   .slide-2 {
-    background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/65945cc2b444014ebc5f1cac_2.png");
+    background-image: url("../img/projects/summarization/2.png");
     background-size: cover;
   }
 
@@ -5176,7 +5176,7 @@ figcaption {
 
   .intro-picture {
     height: 300px;
-    background-image: url("https://assets-global.website-files.com/6590181b560e9077a39f9dc5/65941f488257fdaec59e56d5_main.webp");
+    background-image: url("../img/main.webp");
     background-position: 50%;
     background-repeat: repeat-x;
     background-size: cover;
