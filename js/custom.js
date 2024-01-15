@@ -110,6 +110,20 @@ if (maxWidth > 991) {
             // <Portfolio>
             setText('main-title-portfolio', 'Портфолио');
             setText('main-desc-portfolio', 'Личные Проекты');
+
+            el = document.getElementsByClassName('category');
+            if (el.length) {
+                el[0].innerHTML = 'Все Категории';
+                el[4].innerHTML = 'Другое';
+            }
+
+            el = document.getElementsByClassName('project-title');
+            let project_ru = ['Суммаризация Текста', 'Детекция Эмоций', 'Распознавание Цифр', 'Распознавание Букв']
+            if (el.length) {
+                for (let i = 0; i < el.length; i++) {
+                    el[i].innerText = project_ru[i];
+                }
+            }
             // </Portfolio>
 
             // <Contact>
@@ -125,7 +139,13 @@ if (maxWidth > 991) {
             setPlaceholder('message', 'Сообщение');
             // </Contact>
 
+            // <Projects>
             setText('main-desc-project', 'Личный проект');
+            setText('main-title-project-1', project_ru[0]);
+            setText('main-title-project-2', project_ru[1]);
+            setText('main-title-project-3', project_ru[2]);
+            setText('main-title-project-4', project_ru[3]);
+            // </Projects>
 
         } else if (lang == 'tr') {
             // <NavBar>
@@ -197,6 +217,20 @@ if (maxWidth > 991) {
             // <Portfolio>
             setText('main-title-portfolio', 'Portföy');
             setText('main-desc-portfolio', 'Kişisel Projeler');
+
+            el = document.getElementsByClassName('category');
+            if (el.length) {
+                el[0].innerHTML = 'Tüm Kategoriler';
+                el[4].innerHTML = 'Diğer';
+            }
+
+            el = document.getElementsByClassName('project-title');
+            let project_tr = ['Metin Özetleme', 'Duygu Tespiti', 'Rakam Tanıma', 'Harf Tanıma']
+            if (el.length) {
+                for (let i = 0; i < el.length; i++) {
+                    el[i].innerText = project_tr[i];
+                }
+            }
             // </Portfolio>
 
             // <Contact>
@@ -212,7 +246,13 @@ if (maxWidth > 991) {
             setPlaceholder('message', 'Mesaj');
             // </Contact>
 
+            // <Projects>
             setText('main-desc-project', 'Kişisel Proje');
+            setText('main-title-project-1', project_tr[0]);
+            setText('main-title-project-2', project_tr[1]);
+            setText('main-title-project-3', project_tr[2]);
+            setText('main-title-project-4', project_tr[3]);
+            // </Projects>
         }
 
         let languageBtn = document.getElementsByClassName("language-2");

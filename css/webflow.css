@@ -2959,6 +2959,16 @@ figcaption {
   background-image: url("../img/projects/detection/main.webp");
 }
 
+/* /////////////////////////// */
+.project-overview-header.cc-project-2-header.digit-overview {
+  background-image: url("../img/projects/digit/main.webp");
+}
+
+.project-overview-header.cc-project-2-header.letter-overview {
+  background-image: url("../img/projects/letter/main.webp");
+}
+/* ////////////////////////// */
+
 .project-overview-header.cc-project-3-header {
   background-image: url("6590181c560e9077a39f9e47_portfolio%203%20-%20wide.svg");
   background-size: cover;
