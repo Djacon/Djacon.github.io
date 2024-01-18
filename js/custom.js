@@ -34,14 +34,12 @@ if (maxWidth > 991) {
         document.documentElement.setAttribute('lang', lang);
         if (lang == 'ru') {
             // <NavBar>
-            let el = document.getElementById('language-main')
-            if (el) {
-                el.innerText = 'Русский';
-            }
+            setText('language-main', 'Русский');
+
             setText('logo-firstname', 'Даниел');
             setText('logo-lastname', 'Илле');
 
-            el = document.getElementsByClassName('nav-item');
+            let el = document.getElementsByClassName('nav-item');
             let nav_ru = ['Главная', 'Обо мне', 'Портфолио', 'Контакты'];
             for (let i = 0; i < el.length; i++) {
                 el[i].innerText = nav_ru[i];
@@ -158,12 +156,9 @@ if (maxWidth > 991) {
 
         } else if (lang == 'tr') {
             // <NavBar>
-            let el = document.getElementById('language-main')
-            if (el) {
-                el.innerText = 'Turkçe';
-            }
+            setText('language-main', 'Turkçe');
 
-            el = document.getElementsByClassName('nav-item');
+            let el = document.getElementsByClassName('nav-item');
             nav_tr = ['Anasayfa', 'Hakkımda', 'Portföy', 'İletişim'];
             for (let i = 0; i < el.length; i++) {
                 el[i].innerText = nav_tr[i];
@@ -312,7 +307,7 @@ if (el.length) {
                 el[j].classList.remove("active-btn");
             }
             el[i].classList.add("active-btn");
-            
+
             let cat = el[i].getAttribute('project_type');
             let projects = document.querySelectorAll('.portfolio-grid a');
             for (let j = 0; j < projects.length; j++) {
