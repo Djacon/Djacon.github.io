@@ -2611,7 +2611,7 @@ figcaption {
   background-image: url("../img/projects/detection/main.webp");
 }
 
-/* /////////////////////////// */
+/* ////////////////////////// */
 .project-overview-header.cc-project-2-header.digit-overview {
   background-image: url("../img/projects/digit/main.webp");
 }
@@ -3525,6 +3525,32 @@ figcaption {
   background-image: url("../img/projects/detection/1.webp");
 }
 
+/* ////////////////////////// */
+.slide.digitslide {
+  background-image: url("../img/projects/digit/1.webp");
+}
+
+.slide.letterslide {
+  background-image: url("../img/projects/letter/1.webp");
+}
+
+.slide-2.digitslide {
+  background-image: url("../img/projects/digit/2.webp");
+}
+
+.slide-2.letterslide {
+  background-image: url("../img/projects/letter/2.webp");
+}
+
+.slide-3.digitslide {
+  background-image: url("../img/projects/digit/3.webp");
+}
+
+.slide-3.letterslide {
+  background-image: url("../img/projects/letter/3.webp");
+}
+/* ////////////////////////// */
+
 .slide-2 {
   background-image: url("../img/projects/summarization/2.webp");
   background-position: 50% 0;
@@ -4038,7 +4064,7 @@ figcaption {
   }
 
   .slide-2 {
-    background-image: url("../img/projects/summarization/2.png");
+    background-image: url("../img/projects/summarization/2.webp");
     background-size: cover;
   }
 
