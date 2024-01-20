@@ -50,7 +50,7 @@ if (maxWidth > 991) {
             el = document.getElementById('intro-about-cv-btn');
             if (el) {
                 el.innerText = 'Загрузить CV';
-                el.href = 'files/cv_ru.pdf'
+                el.href = 'assets/files/cv_ru.pdf'
             }
 
             setText('intro-about-full-name', 'Даниел Илле');

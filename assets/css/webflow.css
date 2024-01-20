@@ -2535,7 +2535,7 @@ figcaption {
   min-height: 300px;
   color: #fff;
   background-color: #222;
-  background-image: url("../img/main.webp");
+  background-image: url("../img/main/main.webp");
   background-position: 0%;
   background-size: cover;
   justify-content: center;
@@ -4140,7 +4140,7 @@ figcaption {
 
   .intro-picture {
     height: 300px;
-    background-image: url("../img/main.webp");
+    background-image: url("../img/main/main.webp");
     background-position: 50%;
     background-repeat: repeat-x;
     background-size: cover;
