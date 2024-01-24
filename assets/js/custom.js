@@ -17,6 +17,7 @@ if (maxWidth > 991) {
         }
         return (lang == 'ru') ? 'Russian': (lang == 'tr') ? 'Turkish': 'English'; 
     }
+
     function setText(id, text) {
         let el = document.getElementById(id);
         if (!el) return;

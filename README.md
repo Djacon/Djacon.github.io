@@ -10,7 +10,7 @@ This project represents my virtual space where I showcase my professional skills
 ## Features
 
 - 🌐 Dynamic Design: Modern and visually appealing design reflecting my approach to design
-- 🛠 Diverse Projects: Breakdown and demonstration of various web projects, including AI development, web design, and other areas
+- 🛠 Diverse Projects: Breakdown and demonstration of various projects, including AI development, web design, and other areas
 - 📄 Detailed Descriptions: Each project comes with a detailed description explaining its goals and technologies used
 
 ## Best practices
@@ -24,7 +24,7 @@ If you have questions, suggestions, or just want to connect, feel free to reach 
 
 - 📧 Email: djaconfr@gmail.com
 - 🎮 Discord: [Djacon#0090](https://discordapp.com/users/417714567632781313/)
-- 🌍 Telegram: [@Djacon](https://t.me/Djacon)
+- 🌐 Telegram: [@Djacon](https://t.me/Djacon)
 
 ## Acknowledgements
 Thank you for visiting my portfolio! I hope you find something interesting here. 🚀
